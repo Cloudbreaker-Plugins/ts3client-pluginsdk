@@ -29,9 +29,9 @@
 		#define EXPORTDLL
 	#endif
 #else
-	#include <stdint.h>
+	#include <cstdint>
 	typedef uint16_t anyID;
-	typedef uint64_t uint64;
+	typedef unsigned long long uint64;
 	#ifdef BUILDING_DLL
 		#define EXPORTDLL __attribute__ ((visibility("default")))
 	#else
